@@ -4,7 +4,7 @@ import extrudeFace from "./extrudeFace";
 import getVertices from "./getVertices";
 import moveGeometry from "./moveGeometry";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader"
-import wood from "../src/wood_texture.jpg"
+import wood from "/wood_texture.jpg"
 import { Color, Material } from "three";
 
 
@@ -55,7 +55,7 @@ let shoes3 = new THREE.Mesh()
 let doorHandle = new THREE.Mesh()
 
 
-gltf.load("../src/folded_clothes.glb", (gltf) => {
+gltf.load("/folded_clothes.glb", (gltf) => {
     gltf.scene.traverse ( (child) => {
         if ( child.isMesh )
         {
@@ -70,7 +70,7 @@ gltf.load("../src/folded_clothes.glb", (gltf) => {
     // loader.rotateY(Math.PI)
     folded_clothes.add(loader)
     })
-gltf.load("../src/folded_clothes2.glb", (gltf) => {
+gltf.load("/folded_clothes2.glb", (gltf) => {
     gltf.scene.traverse ( (child) => {
         if ( child.isMesh )
         {
@@ -85,7 +85,7 @@ gltf.load("../src/folded_clothes2.glb", (gltf) => {
     // loader.rotateY(Math.PI)
     folded_clothes3.add(loader)
     })
-gltf.load("../src/folded_clothes3.glb", (gltf) => {
+gltf.load("/folded_clothes3.glb", (gltf) => {
     gltf.scene.traverse ( (child) => {
         if ( child.isMesh )
         {
@@ -101,7 +101,7 @@ gltf.load("../src/folded_clothes3.glb", (gltf) => {
         folded_clothes2.add(loader)
         })
 
-gltf.load("../src/clothes1.glb", (gltf) => {
+gltf.load("/clothes1.glb", (gltf) => {
     gltf.scene.traverse ( (child) => {
         if ( child.isMesh )
         {
@@ -116,7 +116,7 @@ gltf.load("../src/clothes1.glb", (gltf) => {
     // loader.rotateY(Math.PI)
     clothes1.add(loader)
     })
-gltf.load("../src/clothes2.glb", (gltf) => {
+gltf.load("/clothes2.glb", (gltf) => {
     gltf.scene.traverse ( (child) => {
         if ( child.isMesh )
         {
@@ -132,7 +132,7 @@ gltf.load("../src/clothes2.glb", (gltf) => {
     // loader.rotateY(Math.PI)
     clothes2.add(loader)
     })
-gltf.load("../src/hanger.gltf", (gltf) => {
+gltf.load("/hanger.gltf", (gltf) => {
     gltf.scene.traverse ( (child) => {
         if ( child.isMesh )
         {
@@ -148,7 +148,7 @@ gltf.load("../src/hanger.gltf", (gltf) => {
     loader.rotateX(Math.PI)
     hanger1.add(loader)
     })
-gltf.load("../src/hanger.gltf", (gltf) => {
+gltf.load("/hanger.gltf", (gltf) => {
     gltf.scene.traverse ( (child) => {
         if ( child.isMesh )
         {
@@ -164,7 +164,7 @@ gltf.load("../src/hanger.gltf", (gltf) => {
     loader.rotateY(Math.PI)
     hanger2.add(loader)
     })
-gltf.load("../src/shelf_item1.glb", (gltf) => {
+gltf.load("/shelf_item1.glb", (gltf) => {
     gltf.scene.traverse ( (child) => {
         if ( child.isMesh )
         {
@@ -181,7 +181,7 @@ gltf.load("../src/shelf_item1.glb", (gltf) => {
         shelfItem1.add(loader)
         })
 
-gltf.load("../src/shoes.glb", (gltf) => {
+gltf.load("/shoes.glb", (gltf) => {
     gltf.scene.traverse ( (child) => {
         if ( child.isMesh )
         {
@@ -198,7 +198,7 @@ gltf.load("../src/shoes.glb", (gltf) => {
     shoes.add(loader)
     })
 
-gltf.load("../src/shelf_item2.glb", (gltf) => {
+gltf.load("/shelf_item2.glb", (gltf) => {
     gltf.scene.traverse ( (child) => {
         if ( child.isMesh )
         {
@@ -215,7 +215,7 @@ gltf.load("../src/shelf_item2.glb", (gltf) => {
     shelfItem2.add(loader)
     })
 
-gltf.load("../src/bag.glb", (gltf) => {
+gltf.load("/bag.glb", (gltf) => {
     gltf.scene.traverse ( (child) => {
         if ( child.isMesh )
         {
@@ -232,7 +232,7 @@ gltf.load("../src/bag.glb", (gltf) => {
     bag.add(loader)
     })
 
-gltf.load("../src/hat1.glb", (gltf) => {
+gltf.load("/hat1.glb", (gltf) => {
     gltf.scene.traverse ( (child) => {
         if ( child.isMesh )
         {
@@ -249,7 +249,7 @@ gltf.load("../src/hat1.glb", (gltf) => {
     hat.add(loader)
     })
 
-gltf.load("../src/box.glb", (gltf) => {
+gltf.load("/box.glb", (gltf) => {
     gltf.scene.traverse ( (child) => {
         if ( child.isMesh )
         {
@@ -266,7 +266,7 @@ gltf.load("../src/box.glb", (gltf) => {
     box1.add(loader)
     })
 
-gltf.load("../src/box2.glb", (gltf) => {
+gltf.load("/box2.glb", (gltf) => {
     gltf.scene.traverse ( (child) => {
         if ( child.isMesh )
         {
@@ -282,7 +282,7 @@ gltf.load("../src/box2.glb", (gltf) => {
     loader.position.x = -0.05
     box2.add(loader)
     })
-gltf.load("../src/box3.glb", (gltf) => {
+gltf.load("/box3.glb", (gltf) => {
     gltf.scene.traverse ( (child) => {
         if ( child.isMesh )
         {
@@ -298,7 +298,7 @@ gltf.load("../src/box3.glb", (gltf) => {
     loader.position.x = -0.05
     box3.add(loader)
     })
-gltf.load("../src/box4.glb", (gltf) => {
+gltf.load("/box4.glb", (gltf) => {
     gltf.scene.traverse ( (child) => {
         if ( child.isMesh )
         {
@@ -314,7 +314,7 @@ gltf.load("../src/box4.glb", (gltf) => {
     loader.position.x = -0.05
     box4.add(loader)
     })
-gltf.load("../src/box5.glb", (gltf) => {
+gltf.load("/box5.glb", (gltf) => {
     gltf.scene.traverse ( (child) => {
         if ( child.isMesh )
         {
@@ -330,7 +330,7 @@ gltf.load("../src/box5.glb", (gltf) => {
     loader.position.x = -0.05
     box5.add(loader)
     })
-gltf.load("../src/box6.glb", (gltf) => {
+gltf.load("/box6.glb", (gltf) => {
     gltf.scene.traverse ( (child) => {
         if ( child.isMesh )
         {
@@ -346,7 +346,7 @@ gltf.load("../src/box6.glb", (gltf) => {
     loader.position.x = -0.05
     box6.add(loader)
     })
-gltf.load("../src/box7.glb", (gltf) => {
+gltf.load("/box7.glb", (gltf) => {
     gltf.scene.traverse ( (child) => {
         if ( child.isMesh )
         {
@@ -362,7 +362,7 @@ gltf.load("../src/box7.glb", (gltf) => {
     loader.position.x = -0.05
     box7.add(loader)
     })
-gltf.load("../src/box8.glb", (gltf) => {
+gltf.load("/box8.glb", (gltf) => {
     gltf.scene.traverse ( (child) => {
         if ( child.isMesh )
         {
@@ -392,7 +392,7 @@ gltf.load("../src/box8.glb", (gltf) => {
     loader.position.x = -0.05
     box8.add(loader)
     })
-gltf.load("../src/stackedBoxes1.glb", (gltf) => {
+gltf.load("/stackedBoxes1.glb", (gltf) => {
     gltf.scene.traverse ( (child) => {
         if ( child.isMesh )
         {
@@ -409,7 +409,7 @@ gltf.load("../src/stackedBoxes1.glb", (gltf) => {
     stackedBoxes1.add(loader)
     })
 
-gltf.load("../src/luggage.glb", (gltf) => {
+gltf.load("/luggage.glb", (gltf) => {
     gltf.scene.traverse ( (child) => {
         if ( child.isMesh )
         {
@@ -426,7 +426,7 @@ gltf.load("../src/luggage.glb", (gltf) => {
     luggage1.add(loader)
     })
 
-gltf.load("../src/pant1.glb", (gltf) => {
+gltf.load("/pant1.glb", (gltf) => {
     gltf.scene.traverse ( (child) => {
         if ( child.isMesh )
         {
@@ -443,7 +443,7 @@ gltf.load("../src/pant1.glb", (gltf) => {
     pant1.add(loader)
     })
 
-gltf.load("../src/pant2.glb", (gltf) => {
+gltf.load("/pant2.glb", (gltf) => {
     gltf.scene.traverse ( (child) => {
         if ( child.isMesh )
         {
@@ -460,7 +460,7 @@ gltf.load("../src/pant2.glb", (gltf) => {
     pant2.add(loader)
     })
 
-gltf.load("../src/pant3.glb", (gltf) => {
+gltf.load("/pant3.glb", (gltf) => {
     gltf.scene.traverse ( (child) => {
         if ( child.isMesh )
         {
@@ -477,7 +477,7 @@ gltf.load("../src/pant3.glb", (gltf) => {
     pant3.add(loader)
     })
 
-gltf.load("../src/pant4.glb", (gltf) => {
+gltf.load("/pant4.glb", (gltf) => {
     gltf.scene.traverse ( (child) => {
         if ( child.isMesh )
         {
@@ -494,7 +494,7 @@ gltf.load("../src/pant4.glb", (gltf) => {
     pant4.add(loader)
     })
 
-gltf.load("../src/pant5.glb", (gltf) => {
+gltf.load("/pant5.glb", (gltf) => {
     gltf.scene.traverse ( (child) => {
         if ( child.isMesh )
         {
@@ -511,7 +511,7 @@ gltf.load("../src/pant5.glb", (gltf) => {
     pant5.add(loader)
     })
 
-gltf.load("../src/pant6.glb", (gltf) => {
+gltf.load("/pant6.glb", (gltf) => {
     gltf.scene.traverse ( (child) => {
         if ( child.isMesh )
         {
@@ -528,7 +528,7 @@ gltf.load("../src/pant6.glb", (gltf) => {
     pant6.add(loader)
     })
 
-gltf.load("../src/folded_clothes4.glb", (gltf) => {
+gltf.load("/folded_clothes4.glb", (gltf) => {
     gltf.scene.traverse ( (child) => {
         if ( child.isMesh )
         {
@@ -545,7 +545,7 @@ gltf.load("../src/folded_clothes4.glb", (gltf) => {
     folded_clothes4.add(loader)
     })
 
-gltf.load("../src/capHat.glb", (gltf) => {
+gltf.load("/capHat.glb", (gltf) => {
     gltf.scene.traverse ( (child) => {
         if ( child.isMesh )
         {
@@ -562,7 +562,7 @@ gltf.load("../src/capHat.glb", (gltf) => {
     capHat.add(loader)
     })
     
-gltf.load("../src/bags.glb", (gltf) => {
+gltf.load("/bags.glb", (gltf) => {
     gltf.scene.traverse ( (child) => {
         if ( child.isMesh )
         {
@@ -579,7 +579,7 @@ gltf.load("../src/bags.glb", (gltf) => {
     bags.add(loader)
     })
 
-gltf.load("../src/bags2.glb", (gltf) => {
+gltf.load("/bags2.glb", (gltf) => {
     gltf.scene.traverse ( (child) => {
         if ( child.isMesh )
         {
@@ -595,7 +595,7 @@ gltf.load("../src/bags2.glb", (gltf) => {
     loader.position.x = 0
     bags2.add(loader)
     })
-gltf.load("../src/bag3.glb", (gltf) => {
+gltf.load("/bag3.glb", (gltf) => {
     gltf.scene.traverse ( (child) => {
         if ( child.isMesh )
         {
@@ -611,7 +611,7 @@ gltf.load("../src/bag3.glb", (gltf) => {
     loader.position.x = 0
     bag3.add(loader)
     })
-gltf.load("../src/shoes2.glb", (gltf) => {
+gltf.load("/shoes2.glb", (gltf) => {
     gltf.scene.traverse ( (child) => {
         if ( child.isMesh )
         {
@@ -627,7 +627,7 @@ gltf.load("../src/shoes2.glb", (gltf) => {
     loader.position.x = 0
     shoes2.add(loader)
     })
-gltf.load("../src/shoes3.glb", (gltf) => {
+gltf.load("/shoes3.glb", (gltf) => {
     gltf.scene.traverse ( (child) => {
         if ( child.isMesh )
         {
@@ -645,7 +645,7 @@ gltf.load("../src/shoes3.glb", (gltf) => {
     })
 
 
-gltf.load("../src/doorHandle.glb", (gltf) => {
+gltf.load("/doorHandle.glb", (gltf) => {
     gltf.scene.traverse ( (child) => {
         if ( child.isMesh )
         {

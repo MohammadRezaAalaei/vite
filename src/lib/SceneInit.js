@@ -8,7 +8,7 @@ export default class SceneInit {
     this.scene = undefined;
     this.camera = undefined;
     this.renderer = undefined;
-    this.width = window.innerWidth;
+    this.width = window.innerWidth*0.93;
     this.height = window.innerHeight*0.8;
     // NOTE: Camera params;
     this.fov = 35;
@@ -162,7 +162,9 @@ export default class SceneInit {
     this.renderer.setSize(this.width, this.height);
     this.renderer.setSize( this.width, this.height );
     if (this.composer) {
-      this.composer.setSize( this.width, this.height );
+      this.composer.setSize( this.width * 0.8, this.height*0.8 );
+  
+      effectFXAA.uniforms[ 'resolution' ].value.set( 1 / this.width, 1 / this.height );
 
     }
   }

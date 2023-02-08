@@ -1,0 +1,17 @@
+
+.App {
+    background-color: red;
+    justify-items: center;
+    display: inline-block;
+}
+
+canvas {
+    justify-items: center;
+    display: inline-block;
+    border: 1000px;
+    border-color: red;
+}
+
+#mainDiv {
+    background-color: red;
+}

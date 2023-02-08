@@ -22,7 +22,7 @@ import extrudeFace from './extrudeFace';
 import getVertices from './getVertices';
 import Frame from './Frame';
 import objectRightPosition from './ObjectRightPosition';
-import wood from "../src/wood_texture.jpg"
+import wood from "/wood_texture.jpg"
 import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
 import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
 import { ShaderPass } from 'three/addons/postprocessing/ShaderPass.js';
@@ -71,7 +71,7 @@ function App() {
     
 
     let createOutlinePass = (color) => {
-      let outlinePass = new OutlinePass( new THREE.Vector2( window.innerWidth, window.innerHeight*0.8 ), scene, camera );
+      let outlinePass = new OutlinePass( new THREE.Vector2( window.innerWidth*0.93, window.innerHeight*0.8 ), scene, camera );
       composer.addPass( outlinePass );
       outlinePass.visibleEdgeColor.set( color )
       outlinePass.hiddenEdgeColor.set( color)
@@ -381,8 +381,8 @@ function App() {
       // calculate pointer position in normalized device coordinates
       // (-1 to +1) for both components
     
-      pointer.x = ( event.clientX/ (window.innerWidth) ) * 2 - 1;
-      pointer.y = - ( event.clientY / (window.innerHeight*0.8) ) * 2 + 1.33;
+      pointer.x = ( event.clientX/ (window.innerWidth *0.93) ) * 2 - 1.17;
+      pointer.y = - ( event.clientY / (window.innerHeight*0.8) ) * 2 + 1.25;
 
     }
 
@@ -734,7 +734,8 @@ function App() {
       }
 
       function clickObject() {
-        if (pointer.y < 0.95 && pointer.x < 0.7)  {
+        console.log(pointer)
+        if (pointer.y < 0.95 && pointer.x < 0.7 && pointer.x > -1)  {
           resetClick()
 
         }
