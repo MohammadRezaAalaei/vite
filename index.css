@@ -1,0 +1,49 @@
+
+body {
+    padding: 0;
+    margin: 0;
+    /* display: grid;
+    grid-template-columns: 50% 50%;  */
+}
+
+div {
+    margin:0;
+}
+
+script {
+    margin: 0;
+}
+
+#mainDiv {
+    display: grid;
+    grid-template-columns: 50% 50%;    
+    justify-content: center;
+}
+
+.addFrame {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#AddShelvesDiv {
+    display: grid;
+    height: 30px;
+}
+
+#AddPantsHangerDiv {
+    display: grid;
+    height: 30px;
+}
+
+#AddDrawersDiv {
+    display: grid;
+    height: 30px;
+}
+#AddRailDiv {
+    display: grid;
+    height: 30px;
+}
+
+#checkBox {
+    height: 30px;
+}
