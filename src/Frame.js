@@ -4,7 +4,6 @@ import extrudeFace from "./extrudeFace";
 import getVertices from "./getVertices";
 import moveGeometry from "./moveGeometry";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader"
-import clothesTexture1 from "../src/AM159_010_color.jpg"
 import wood from "../src/wood_texture.jpg"
 import { Color, Material } from "three";
 
@@ -529,8 +528,6 @@ gltf.load("../src/pant6.glb", (gltf) => {
     pant6.add(loader)
     })
 
-let clothesTexture = new THREE.TextureLoader().load(clothesTexture1)
-clothesTexture.wrapS = clothesTexture.wrapT = THREE.RepeatWrapping;
 gltf.load("../src/folded_clothes4.glb", (gltf) => {
     gltf.scene.traverse ( (child) => {
         if ( child.isMesh )

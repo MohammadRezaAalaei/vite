@@ -161,8 +161,9 @@ export default class SceneInit {
     this.camera.updateProjectionMatrix();
     this.renderer.setSize(this.width, this.height);
     this.renderer.setSize( this.width, this.height );
-    this.composer.setSize( this.width, this.height );
+    if (this.composer) {
+      this.composer.setSize( this.width, this.height );
 
-    effectFXAA.uniforms[ 'resolution' ].value.set( 1 / this.width, 1 / this.height );
+    }
   }
 }
